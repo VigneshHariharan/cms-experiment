@@ -1,38 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Medium clone but self hosting - experiment for my learning
 
-## Getting Started
+This is an experiment to see whether I can build something like medium that has a notion like editor and how publications can self host it and authorize people to write posts
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [ ] Editor basic setup with a plugin model
+- [ ] Headings (h1,h2,h3) plugin
+- [ ] Edit option for these
+- [ ] Paragraph with bold, italic, underline
+- [ ] Spacing in editor
+- [ ] Images
+- [ ] blockquote
+- [ ] Dictate
+- [ ] Home page to show all the posts created
+- [ ] Rate limit or make it hard for people to spam
+- [ ] Render the post in such a way that it is performant on the client
+- [ ] Using themes
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Design
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### User Interface
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Pages:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Home page where posts are available
+- Editor page - with draft, preview and publish model
+- Post page
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Editor
 
-## Learn More
+Notion editor behaviours are everything written in a block will have it's own style, If the style is changed then the entire format of the block changes. Some limitations with them are having an image and a text side-by-side.
 
-To learn more about Next.js, take a look at the following resources:
+### Self hosting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] Hosting instructions
+- [ ] Storage for posts
+- [ ] Image storage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Backend
 
-## Deploy on Vercel
+- [ ] API route for getting list of posts
+- [ ] CREATE, PUT for storing posts with draft or publish options
+- [ ] Authorization on who can write posts
+- [ ] How to upload images on publisher's storage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
