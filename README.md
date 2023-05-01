@@ -44,3 +44,22 @@ Notion editor behaviours are everything written in a block will have it's own st
 - [ ] Authorization on who can write posts
 - [ ] How to upload images on publisher's storage
 
+### Task list with prioritization
+
+- [ ] Design the editor, store it in a separate module - make it easy to use, flexible, platform independant (like using in react native, electron or compatible to migrate to another storage)
+- [ ] Implement this editor
+- [ ] Rethink decisions made, test whether it solves the problems
+- [ ] Refine the code for editor
+- [ ] Make a wireframe for UI that looks clean on mobile, ipad, desktop
+- [ ] How to store details which database to use?
+- [ ] Which ORM or tool to use for writing queries?
+- [ ] Create schema design for posts and users
+- [ ] CRUD API for users
+- [ ] CRUD API for posts
+- [ ] Test these API's
+- [ ] Document them and try to do it in github itself
+- [ ] Create pages for the frontend
+- [ ] Implement the homepage with test data
+- [ ] Implement the design for editor page
+- [ ] Implement the post page
+- [ ] Refine the design all the pages
